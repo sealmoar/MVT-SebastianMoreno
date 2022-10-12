@@ -39,7 +39,7 @@ def calculate_age(request, birth_day):
 
 def my_template(request):
     my_html = open(
-        "C:/Users/jfpin/Documents/coder_projects/django-coderhouse-project/my_blog/templates/template.html"
+        "C:/Users/57321/Documents/coder_projects/django-coderhouse-project/my_blog/templates/template.html"
     )
 
     template = Template(
