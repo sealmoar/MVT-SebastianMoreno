@@ -19,7 +19,7 @@
     <h1>Cargando un template con loader de Django</h1>
 
     <p style="color: red">Mi nombre es: {{ name }} </p>
-    <p style="color: green">Mi apellido es: {{ last_name }}</p>
+    <p style="color: rgb(15, 0, 128)">Mi apellido es: {{ last_name }}</p>
 
     <hr>
     <ul>
@@ -41,7 +41,7 @@
         {% for student, grade in grades.items %}
             <tr>
                 <td>{{ student }}</td>
-                {% if grade < 7 %}
+                {% if grade <= 7 %}
                     <td style="color:red;text-align:center">
                         {{ grade }}
                     </td>

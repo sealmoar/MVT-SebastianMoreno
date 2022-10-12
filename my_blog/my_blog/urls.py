@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from course.views import create_course
+from student.views import create_student
 from my_blog.views import (
     hello_world,
     title,
@@ -34,5 +35,6 @@ urlpatterns = [
     path('calculate-age/<str:birth_day>/', calculate_age),
     path('template', my_template),
     path('template_loader/<str:name>/<str:last_name>', template_loader),
-    path('create_course/<str:name>/<int:code>', create_course),
+    path('create_coujrse/<str:name>/<int:code>', create_course),
+    path('create_student/<str:name>/<str:last_name>/<str:email>', create_student),
 ]
