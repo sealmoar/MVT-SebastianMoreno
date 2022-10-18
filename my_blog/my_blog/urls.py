@@ -18,6 +18,7 @@ from django.urls import path
 
 from course.views import create_course
 from student.views import create_student
+from family.views import create_familiar
 from my_blog.views import (
     hello_world,
     title,
@@ -37,4 +38,5 @@ urlpatterns = [
     path('template_loader/<str:name>/<str:last_name>', template_loader),
     path('create_coujrse/<str:name>/<int:code>', create_course),
     path('create_student/<str:name>/<str:last_name>/<str:email>', create_student),
+    path('create_familiar/<str:name>/<str:last_name>/<str:birth_day>/<str:email>', create_familiar),
 ]

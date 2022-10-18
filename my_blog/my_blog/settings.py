@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'course',
     'student',
+    'family',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            "C:/Users/57321/Documents/coder_projects/django-coderhouse-project/my_blog/templates/"
+            "C:/Users/57321/Documents/coder_projects/django-coderhouse-project2/my_blog/templates/"
         ],
         'APP_DIRS': True,
         'OPTIONS': {
